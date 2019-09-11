@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 //import any components needed
 
@@ -7,6 +7,9 @@ import { specials } from "../../../data";
 
 const Specials = ({symbol, display, setDisplay}) => {
   // STEP 2 - add the imported data to state
+
+  // const specialButton = "specialButton";
+  // const specialButtonCon = "specialButtonCon";
 
   function specialOperation() {
     if(symbol === "C"){
@@ -26,7 +29,11 @@ const Specials = ({symbol, display, setDisplay}) => {
        it any props needed by the child component*/
        specials.map((symbols, index) => {
         //  debugger
-         return <div key={index}>
+         return <div key={index} 
+         onClick={() => specialOperation()}
+         symbol={symbols}
+         display={display}
+         setdisplay={setDisplay}>
            {symbols}</div>
        }
        )

@@ -24,12 +24,16 @@ function App() {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display display={display} setDisplay={setDisplay} />
-        <div className="leftCon">
-          <Specials />
-          <Numbers />
-        </div>
-        <div className="rightCon">
-          <Operators />
+
+        <div className="buttonCon">
+          <div className="leftCon">
+              <Specials />
+              <Numbers />
+          </div>
+
+          <div className="rightCon">
+            <Operators />
+          </div>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ const Operators = ({symbol, value}) => {
   // STEP 2 - add the imported data to state
 
   const operatorButton = "opButton";
+  const operatorButtonCon = "opButtonCon";
 
   // function symbolKeys(){
   //   if (symbol === "/" || symbol === "x" || symbol === "-" || symbol === "+" || symbol === "=") {
@@ -23,7 +24,7 @@ const Operators = ({symbol, value}) => {
   // }
 
   return (
-    <div>
+    <div className={operatorButtonCon}>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/

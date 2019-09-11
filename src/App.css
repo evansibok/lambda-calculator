@@ -21,4 +21,46 @@
     font-size: 5.0rem;
   }
   
+.leftCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
 
+.numButton,
+.zeroButton,
+.specialButton,
+.opButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 1.5rem;
+    padding: 1em;
+    margin: 0.4em;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: white;
+    
+}
+.zeroButton {
+    background: rgb(28, 18, 85);
+    flex-grow: 2;
+}
+.numButton {
+    background: rgb(28, 18, 85);
+
+}
+.specialButton {   
+    background: rgb(55, 61, 151);
+}
+.specialCon {
+    display: flex;
+    /* flex-direction: row; */
+}
+.opButton {
+    background: rgb(94, 73, 214);
+}

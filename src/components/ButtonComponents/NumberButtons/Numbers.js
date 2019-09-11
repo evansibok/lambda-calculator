@@ -7,9 +7,8 @@ import { numbers } from "../../../data";
 
 const Numbers = () => {
   // STEP 2 - add the imported data to state
-  // const numButton = "numButton";
-  // const numButtonCon = "numButtonCon";
-  // const zeroButton = "zeroButton";
+  const numButton = "numButton";
+  const zeroButton = "zeroButton";
 
   return (
     <div>
@@ -18,9 +17,9 @@ const Numbers = () => {
        it any props needed by the child component*/
         numbers.map((nums, index) => {
           if(index !== 9){
-            return <div key={index}>{nums}</div>
+            return <div className={numButton} key={index}>{nums}</div>
           } else {
-            return <div key={index}>{nums}</div>
+            return <div className={zeroButton} key={index}>{nums}</div>
           }
         })
       }

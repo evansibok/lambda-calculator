@@ -1,22 +1,75 @@
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+  background-color: #c00025;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding: 25px;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+  margin-top: 25px;
+  height: 100px;
+  width: 100%;
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 5rem;
+}
+
+.buttonCon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.leftCon {
+    width: calc(77% - 15px);
+}
+.rightCon {
+    width: calc(23% - 15px);
+}
+.specialCon {
+  display: flex;
+  justify-content: space-between;
+}
+.numButtonCon {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.numButton,
+.zeroButton,
+.specialButton,
+.opButton {
+    width: calc(33.33% - 15px);
+    min-height: 100px;
+    margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  border-radius: 50%;
+  font-size: 2.2rem;
+  color: white;
+}
+.zeroButton {
+  background: rgb(28, 18, 85);
+  flex-grow: 2;
+  /* 
+  text-align: center;
+  border-radius: 50px; */
+}
+.numButton {
+  background: rgb(28, 18, 85);
+}
+.specialButton {
+  background: rgb(55, 61, 151);
+
+}
+.opButton {
+  background: rgb(94, 73, 214);
+    width: 100%;
+}

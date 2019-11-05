@@ -1,0 +1,75 @@
+.container {
+  background-color: #c00025;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding: 25px;
+}
+.container .display {
+  margin-top: 25px;
+  height: 100px;
+  width: 100%;
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 5rem;
+}
+.container .buttonCon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.container .leftCon {
+  width: calc(77% - 15px);
+}
+.container .rightCon {
+  width: calc(23% - 15px);
+}
+.container .specialCon {
+  display: flex;
+  justify-content: space-between;
+}
+.container .numButtonCon {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .numButton,
+.container .zeroButton,
+.container .specialButton,
+.container .opButton {
+  width: calc(33.33% - 15px);
+  min-height: 100px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  border-radius: 50%;
+  font-size: 2.2rem;
+  color: white;
+}
+.container .zeroButton {
+  background: #1c1255;
+  flex-grow: 2;
+  /* 
+  text-align: center;
+  border-radius: 50px; */
+}
+.container .numButton {
+  background: #1c1255;
+}
+.container .specialButton {
+  background: #373d97;
+}
+.container .opButton {
+  background: #5e49d6;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
